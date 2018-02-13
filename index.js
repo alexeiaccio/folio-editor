@@ -8,5 +8,7 @@ app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'))
 })
 
-app.listen(9000)
-console.log(`App serve at: http://localhost:9000/`)
+const PORT = process.env.PORT || 9000
+
+app.set('port', PORT)  
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
