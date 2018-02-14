@@ -1,13 +1,5 @@
-.App-header {
-  text-align: center;
-  padding: 20px;
-}
-
-.App-content {
+.App {
   width: 100%;
   max-width: 720px;
   margin: 0 auto;
-}
-.App-content img {
-  width: 100%;
 }
